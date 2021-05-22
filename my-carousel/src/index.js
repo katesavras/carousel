@@ -1,6 +1,9 @@
-const heading = document.createElement('h1')
-heading.textContent = 'Hello world!'
-heading.style.color = 'red'
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App.js"
 
-const root = document.querySelector('#root')
-root.append(heading)
+ReactDOM.render(
+    <App/>,
+    document.getElementById("root")
+);
+module.hot.accept();
