@@ -3,11 +3,9 @@ import Carousel from "./components/Carousel";
 
 const App = () => {
     return (
-        <div className="container">
+        <div className="app">
             <Carousel/>
         </div>
-
     )
 }
-
 export default App
