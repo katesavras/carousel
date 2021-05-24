@@ -1,0 +1,41 @@
+.carousel{
+    width: 60%;
+    height: 500px;
+    background-color: #030200;
+}
+.carouselInner{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+}
+
+.carouselInner .left{
+    flex: 5%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: grid;
+    place-items: center;
+    color: white;
+}
+.carouselInner .center{
+    flex: 90%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+
+}
+.carouselInner .right{
+    flex: 5%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: grid;
+    place-items: center;
+    color: white;
+}

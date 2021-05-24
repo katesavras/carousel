@@ -1,11 +1,10 @@
 import React from 'react'
+import Carousel from "./components/Carousel";
 
 const App = () => {
     return (
-        <div>
-            <h1>
-                Create React App Without CRA ☘️
-            </h1>
+        <div className="container">
+            <Carousel/>
         </div>
 
     )
