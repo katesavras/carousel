@@ -8,7 +8,6 @@ module.exports = {
         main: path.resolve(__dirname, './src/index.js'),
     },
 
-
     module: {
         rules: [
             // JavaScript
@@ -19,19 +18,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [
-                    {
-                        loader: 'style-loader'
-                    },
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            modules: true,
-                            localsConvention: 'camelCase',
-                            sourceMap: true
-                        }
-                    }
-                ]
+                use: ['style-loader', 'css-loader']
             },
             // изображения
             {
@@ -58,7 +45,5 @@ module.exports = {
             template: path.resolve(__dirname, './src/template.html'), // шаблон
             filename: 'index.html', // название выходного файла
         }),
-        new webpack.HotModuleReplacementPlugin(),
-
-    ]
+        new webpack.HotModuleReplacementPlugin(),]
 }
