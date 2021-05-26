@@ -1,15 +1,14 @@
 import React, {useState} from "react";
-import "./Carousel.css"
+import "../styles/carousel.css"
 import {images} from "../Data/CarouselData"
 
 
 const Carousel = () => {
     const [curImg, setCurrImg] = useState(0)
-    const [fade, setFade] = useState(false);
+    const [fade, setFade] = useState(false)
 
     const animate = () => {
         setFade(true);
-
         setTimeout(() => setFade(false), 500);
     }
     const handleClickLeft = () => {
@@ -23,7 +22,7 @@ const Carousel = () => {
 
     return (
         <div className="carousel">
-            <div className={fade ? "carouselInner fade" : "carouselInner"}  style={{backgroundImage: `url(${images[curImg].img})`}}>
+            <div className={fade ? "carousel__inner fade" : "carousel__inner"} style={{backgroundImage: `url(${images[curImg].img})`}}>
                 <div className="left" onClick={handleClickLeft}>
                     <span>&#10094;</span>
                 </div>

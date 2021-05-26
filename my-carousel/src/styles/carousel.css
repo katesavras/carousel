@@ -3,7 +3,7 @@
     height: 500px;
     background-color: #030200;
 }
-.carouselInner{
+.carousel__inner{
     height: 100%;
     width: 100%;
     background-position: center;
@@ -13,7 +13,7 @@
 
 }
 
-.carouselInner .left {
+.carousel__inner .left {
     flex: 5%;
     height: 100%;
     background-color: rgba(0,0,0,0.3);
@@ -22,7 +22,7 @@
     color: white;
     cursor: pointer;
 }
-.carouselInner .center{
+.carousel__inner .center{
     flex: 90%;
     height: 100%;
     display: grid;
@@ -32,7 +32,7 @@
     color: white;
 
 }
-.carouselInner .right{
+.carousel__inner .right{
     flex: 5%;
     height: 100%;
     background-color: rgba(0,0,0,0.3);
@@ -47,9 +47,9 @@ span{
 }
 
 .fade{
-    animation: change-background 500ms ease;
+    animation: changeBackground 500ms ease;
 }
-@keyframes change-background {
+@keyframes changeBackground {
     from {opacity: 0}
     to {opacity: 1}
 }
