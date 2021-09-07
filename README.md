@@ -8,7 +8,6 @@ Here's a brief intro about what a developer must do in order to start watching t
 git clone https://github.com/katesavras/carousel.git
 ```
 ```
-cd my-carousel
 yarn install
 yarn build
 yarn start

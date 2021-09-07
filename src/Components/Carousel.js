@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import "../styles/carousel.css"
 import {images} from "../Data/CarouselData"
 
-
 const Carousel = () => {
     const [curImg, setCurrImg] = useState(0)
     const [fade, setFade] = useState(false)
@@ -22,7 +21,8 @@ const Carousel = () => {
 
     return (
         <div className="carousel">
-            <div className={fade ? "carousel__inner fade" : "carousel__inner"} style={{backgroundImage: `url(${images[curImg].img})`}}>
+            <div className={fade ? "carousel__inner fade" : "carousel__inner"}
+                 style={{backgroundImage: `url(${images[curImg].img})`}}>
                 <div className="left" onClick={handleClickLeft}>
                     <span>&#10094;</span>
                 </div>
@@ -33,9 +33,7 @@ const Carousel = () => {
                     <span>&#10095;</span>
                 </div>
             </div>
-
         </div>
-
     )
 }
 
